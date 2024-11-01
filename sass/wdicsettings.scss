@@ -1,0 +1,683 @@
+@import "base/variables";
+@import "base/mixins";
+
+#wdic_container {
+  h1 {
+    line-height: normal;
+  }
+
+
+  background-color: #265980;
+  color: #ffffff;
+  width: 99%;
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 100px;
+
+
+  input {
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+  }
+  label {
+    margin: 32px;
+    font-size: 1.5em;
+    cursor: auto;
+    display: inline-block;
+
+  }
+
+  select {
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+  }
+
+  /*submit service button*/
+  .wdic-sub-service-btn{
+    width:275px;
+    height:75px;
+    text-align: center;
+    border:2px #ffffff solid;
+    background-color:$create-and-submit;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+    border-radius: 3px;
+    font-size: 2em;
+    line-height: 50%;
+    padding: 15px 15px 15px 15px !important;
+  }
+
+  .wdic-sub-service-btn:hover {
+    background-color: $create-and-submit-hover;
+  }
+
+
+  .wdic_white {
+    color:#ffffff;
+    text-decoration:none;
+  }
+
+  .wdic-pick-color-label {
+    display: inline-block;
+  }
+
+  input[type="color"] {
+    width: 225px;
+    height: 55px;
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+    border-radius: 5px;
+    margin-left: 50px;
+    position: absolute;
+    right: 15px;
+    top:50%;
+    transform: translateY(-50%);
+
+  }
+
+  select[name="wdic_check_color_selector"] {
+    width: 225px;
+    height: 55px;
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+    border-radius: 5px;
+    margin-left: 50px;
+    position: absolute;
+    right: 15px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
+  .wdic-general-settings-card {
+    background: #7f8c8d;
+    box-shadow: 0px 8px 17px 0px rgba(0,0,0,0.20), 0px 6px 20px 0px rgba(0,0,0,0.19);
+    margin-bottom: 5%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5%;
+  }
+
+
+  .wdic-toggle-settings-card {
+    background: #7f8c8d;
+    box-shadow: 0px 8px 17px 0px rgba(0,0,0,0.20), 0px 6px 20px 0px rgba(0,0,0,0.19);
+    overflow:hidden;
+    margin: 0 5%;
+  }
+
+
+  .wdic_optHead {
+    display: inline-block;
+    font-size: 3em;
+    color: white;
+    //padding-left: 100px;
+  }
+
+  .wdic-col-header {
+    text-align: center;
+  }
+
+  .wdic_serviceHead {
+    display: block;
+    font-size: 4em;
+    color: white;
+    padding-left: 100px;
+  }
+
+
+
+  .wdic-serviceHead-center {
+    display: block;
+    font-size: 4em;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  /* Start of Column CSS */
+
+  #wdic_settings_holder {
+    width:100%;
+    position:relative;
+  }
+  #wdic_col1 {
+    display: inline-block;
+    width:50%;
+    position:relative;
+    overflow:hidden;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 3px solid whitesmoke;
+    padding-bottom: 25px;
+    >div {
+      position: relative;
+    }
+      .wdic_optHead {
+        text-align: center;
+      }
+
+    @media screen and (max-width:1500px) {
+      display: block;
+      border: none;
+      width:100%
+    }
+
+    @media screen and (max-width: 620px) {
+      label.wdic-pick-color-label {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      input[type="color"].color-picker {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+
+      }
+
+      #wdic_check_color {
+        position: relative;
+        display: block;
+      }
+
+      #wdic_check_color {
+        text-align: center;
+      }
+      select[name="wdic_check_color_selector"] {
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+
+      }
+
+      .wdic-settings-circle {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+
+      input[type="color"].color-picker {
+        display: block;
+        position: relative;
+      }
+
+    }
+
+
+
+
+  }
+
+  #wdic_col2 {
+    display: inline-block;
+    width:50%;
+    position:relative;
+    overflow:hidden;
+    height: 100%;
+    vertical-align: top;
+    padding-bottom: 25px;
+
+
+    .wdic_optHead {
+      text-align: center;
+    }
+
+    @media screen and (max-width:1500px) {
+      display: block;
+      border: none;
+      width:100%;
+    }
+
+    @media screen and (max-width: 620px) {
+      label.wdic-pick-color-label {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+
+
+      }
+      input[type="color"].color-picker {
+        display: block;
+        position: relative;
+      }
+
+      input[type="color"].color-picker {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+      }
+
+      .wdic-settings-circle {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    }
+
+    >div {
+      position: relative;
+    }
+  }
+
+  .wdic-settings-circle {
+    display: inline-block;
+    border: 6px solid #26C281;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3em;
+    line-height: normal;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+  }
+
+
+
+
+  //popup
+
+  /*popup styling*/
+
+  /*ppopup list style*/
+
+  .wdic-list-item {
+    background: #fff;
+    box-shadow: 0 2px 3px #999;
+    height: 30px;
+    list-style: none;
+    margin: 30px 0;
+    padding: 20px 10px;
+    text-align: center;
+    transform: translateZ(0);
+    transition: box-shadow 0.30s ease-in;
+    width: 500px;
+  }
+
+  .wdic-list-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+  }
+  .wdic-popup ul li:hover {
+    font-size: 1.8em;
+    color: #009999;
+    list-style: none;
+  }
+  .wdic-popup ul {
+    margin-top: 20px;
+  }
+
+
+
+  .wdic-select-popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9001;
+  }
+  .wdic-select-popup-overlay-target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .wdic-popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    max-width: 90%;
+    height: 625px;
+    position: relative;
+    transition: all .2s ease-in-out;
+    .wdic-ref-image {
+      text-align: center;
+      max-width: 100%;
+      img {
+        max-width: 100%;
+      }
+      .wdic-submit-help-image {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+      }
+    }
+
+
+  }
+
+  .wdic-popup li {
+    margin-top: 0;
+    color: #333;
+    font-family: 'segoe ui semibold', sans-serif;
+    font-size: 2em;
+  }
+  .wdic-popup .wdic-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all 200ms;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff0020;
+    margin-bottom: 500px;
+    cursor: pointer;
+
+
+  }
+  .wdic-popup .wdic-close:hover {
+    color: #b10016;
+  }
+  .wdic-popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  #wdic_popup1 {
+    background: rgba(0,0,0, 0.5);
+  }
+
+
+  /*ref image button*/
+
+  .wdic_ref_popup {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+    border-radius: 3px;
+    //width:100px;
+    //height:50px;
+    //  margin-top:100px;
+    text-align: center;
+    border:2px #ffffff solid;
+    background-color:#663399;
+      transform: translateX(-50%);
+    font-size: 2em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 25px;
+    margin-top: 25px;
+    line-height: normal;
+    }
+
+
+  #wdic_create_service:hover  {
+    background: #30ba5d;
+    text-decoration: none;
+  }
+  .wdic-email {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  #submit_button_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #continue_button_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #cancel_button_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #email_text_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #selected_options_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #additional_notes_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #textarea_comments_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+
+  #success_text_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+
+  #email_error_text_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+
+  .wdic-email-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .submit-button-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .email-text-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .continue-button-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .cancel-button-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .selected-options-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .additional-notes-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+
+  }
+
+  .textarea-comments-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .email-error-text-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+
+  }
+
+
+  .success-text-input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+
+  .wdic-css-quick-edit {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  label[name="wdic_css_edit_label"] {
+    position: relative;
+    text-align: center;
+
+
+  }
+
+  #wdic_css_edit_area {
+    height: 150px;
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 25px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+  }
+
+  #wdic_user_email {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #wdic_currency_div {
+    display: block;
+    text-align: center;
+  }
+  #wdic_currency {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  #wdic_currency_input {
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+
+  }
+  #wdic_currency_symbol_div {
+    display: block;
+    text-align: center;
+  }
+  #wdic_symbol {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  #wdic_symbol_select {
+    display: inline-block;
+  }
+  #css_change_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}

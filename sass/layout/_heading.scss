@@ -1,0 +1,43 @@
+.wdic_serviceHead {
+  position: relative;
+  display: inline-block;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .wdic_serviceHead{
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+/*for edit page*/
+.wdic_optHead {
+  display: inline-block;
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  vertical-align: top;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+@media screen and (max-width:800px) {
+  .wdic_optHead {
+    font-size: 2em;
+
+  }
+}
+
+.wdic-heading-center {
+  position: relative;
+  text-align: center;
+}
+
+
+
+

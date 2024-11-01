@@ -1,0 +1,243 @@
+#what-i-charge-admin {
+  margin: 0px 75px 0px 75px;
+}
+
+.wdic-check-center {
+  text-align: center;
+}
+
+.wdic-drop-center {
+  text-align: center;
+
+}
+
+.wdic-toggle-center {
+  text-align: center;
+  > div {
+    display: block !important;
+
+    label {
+      display: block !important;
+      margin-bottom: 5px !important;
+
+    }
+    input {
+      display: inline-block !important;
+      width: 400px;
+
+
+    }
+  }
+}
+
+.wdic-service-name-container {
+  display: block;
+}
+
+@media screen and (max-width: 620px) {
+  .wdic-service-name-container {
+    padding-top: 10px;
+  }
+
+}
+
+.wdic-heading {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.wdic-service-description-container {
+  display: inline-block;
+}
+
+.wdic-service-description {
+  display: inline-block;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin-left: 30px;
+  padding-bottom: 25px;
+}
+
+textarea[name="wdic_service_description"] {
+  width: 400px;
+  height: 400px;
+  font-size: 2em;
+}
+
+.wdic-priceChoice {
+  font-size:1.5em;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.priceChoiceRadio{
+  margin-top: -70px;
+}
+
+#priceSelect  {
+  width:150px;
+  height:35px;
+  font-size: 1.5em;
+}
+
+/*settings page*/
+
+#wdic_currency {
+  height: 50px;
+  width: 75px;
+  font-size: 1.3em;
+  margin-left: 25px;
+
+}
+//#wdic_theme {
+//  height: 50px;
+//  width: 100px;
+//  font-size: 1.3em;
+//  margin-left: 45px;
+//
+//}
+
+
+
+.wdic-price-pad {
+  margin-right: 25px;
+}
+
+.wdic-indent {
+  position: relative;
+  padding-left: 25px;
+}
+
+.color-picker {
+  height: 50px;
+}
+
+//arrows
+
+.wdic-service-arrows {
+  width: 100px;
+  position: absolute;
+  display: inline-block;
+  //margin-top: 50%;
+  //transform: translateY(-50%);
+
+}
+
+.wdic-toggle-top-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 125px;
+  margin-top: 100px;
+  min-height: 110px;
+
+}
+
+.wdic-dropdown-top-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  min-height: 110px;
+
+}
+
+.wdic-checkbox-top-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  min-height: 110px;
+
+}
+
+.wdic-submenu-container {
+  background: #7f8c8d;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.20), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  .wdic-col1 input,.wdic-col2 input {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .wdic-checkSelect {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+
+}
+
+
+
+/* Start of Column CSS */
+
+
+
+.wdic-col1 {
+  display: inline-block;
+  width:50%;
+  position:relative;
+  overflow:hidden;
+  height: 100%;
+  >div {
+    position: relative;
+  }
+  input {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+
+  }
+  select {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+  }
+
+
+
+
+
+}
+
+.wdic-col2 {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+  border-left: 3px solid whitesmoke;
+  input {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+
+  }
+  >div {
+    position: relative;
+  }
+
+}
+
+
+
+
+.wdic-base-choice {
+  position: relative;
+  display: inline-block;
+  text-align: right !important;
+}
+
+.wdic-option-container {
+  margin-top: 40px;
+  text-align: center;
+
+
+
+}

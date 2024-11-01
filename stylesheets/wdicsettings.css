@@ -1,0 +1,481 @@
+#wdic_container {
+  background-color: #265980;
+  color: #ffffff;
+  width: 99%;
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 100px;
+  /*submit service button*/
+  /* Start of Column CSS */
+  /*popup styling*/
+  /*ppopup list style*/
+  /*ref image button*/ }
+  #wdic_container h1 {
+    line-height: normal; }
+  #wdic_container input {
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5); }
+  #wdic_container label {
+    margin: 32px;
+    font-size: 1.5em;
+    cursor: auto;
+    display: inline-block; }
+  #wdic_container select {
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5); }
+  #wdic_container .wdic-sub-service-btn {
+    width: 275px;
+    height: 75px;
+    text-align: center;
+    border: 2px #ffffff solid;
+    background-color: #2ECC71;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    border-radius: 3px;
+    font-size: 2em;
+    line-height: 50%;
+    padding: 15px 15px 15px 15px !important; }
+  #wdic_container .wdic-sub-service-btn:hover {
+    background-color: #26A65B; }
+  #wdic_container .wdic_white {
+    color: #ffffff;
+    text-decoration: none; }
+  #wdic_container .wdic-pick-color-label {
+    display: inline-block; }
+  #wdic_container input[type="color"] {
+    width: 225px;
+    height: 55px;
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-left: 50px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); }
+  #wdic_container select[name="wdic_check_color_selector"] {
+    width: 225px;
+    height: 55px;
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-left: 50px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); }
+  #wdic_container .wdic-general-settings-card {
+    background: #7f8c8d;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5%; }
+  #wdic_container .wdic-toggle-settings-card {
+    background: #7f8c8d;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    margin: 0 5%; }
+  #wdic_container .wdic_optHead {
+    display: inline-block;
+    font-size: 3em;
+    color: white; }
+  #wdic_container .wdic-col-header {
+    text-align: center; }
+  #wdic_container .wdic_serviceHead {
+    display: block;
+    font-size: 4em;
+    color: white;
+    padding-left: 100px; }
+  #wdic_container .wdic-serviceHead-center {
+    display: block;
+    font-size: 4em;
+    color: white;
+    position: relative;
+    text-align: center; }
+  #wdic_container #wdic_settings_holder {
+    width: 100%;
+    position: relative; }
+  #wdic_container #wdic_col1 {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 3px solid whitesmoke;
+    padding-bottom: 25px; }
+    #wdic_container #wdic_col1 > div {
+      position: relative; }
+    #wdic_container #wdic_col1 .wdic_optHead {
+      text-align: center; }
+    @media screen and (max-width: 1500px) {
+      #wdic_container #wdic_col1 {
+        display: block;
+        border: none;
+        width: 100%; } }
+    @media screen and (max-width: 620px) {
+      #wdic_container #wdic_col1 label.wdic-pick-color-label {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px; }
+      #wdic_container #wdic_col1 input[type="color"].color-picker {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0; }
+      #wdic_container #wdic_col1 #wdic_check_color {
+        position: relative;
+        display: block; }
+      #wdic_container #wdic_col1 #wdic_check_color {
+        text-align: center; }
+      #wdic_container #wdic_col1 select[name="wdic_check_color_selector"] {
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0; }
+      #wdic_container #wdic_col1 .wdic-settings-circle {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
+      #wdic_container #wdic_col1 input[type="color"].color-picker {
+        display: block;
+        position: relative; } }
+  #wdic_container #wdic_col2 {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: top;
+    padding-bottom: 25px; }
+    #wdic_container #wdic_col2 .wdic_optHead {
+      text-align: center; }
+    @media screen and (max-width: 1500px) {
+      #wdic_container #wdic_col2 {
+        display: block;
+        border: none;
+        width: 100%; } }
+    @media screen and (max-width: 620px) {
+      #wdic_container #wdic_col2 label.wdic-pick-color-label {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px; }
+      #wdic_container #wdic_col2 input[type="color"].color-picker {
+        display: block;
+        position: relative; }
+      #wdic_container #wdic_col2 input[type="color"].color-picker {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0; }
+      #wdic_container #wdic_col2 .wdic-settings-circle {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); } }
+    #wdic_container #wdic_col2 > div {
+      position: relative; }
+  #wdic_container .wdic-settings-circle {
+    display: inline-block;
+    border: 6px solid #26C281;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3em;
+    line-height: normal;
+    width: 50px;
+    height: 50px;
+    cursor: pointer; }
+  #wdic_container .wdic-list-item {
+    background: #fff;
+    box-shadow: 0 2px 3px #999;
+    height: 30px;
+    list-style: none;
+    margin: 30px 0;
+    padding: 20px 10px;
+    text-align: center;
+    transform: translateZ(0);
+    transition: box-shadow 0.30s ease-in;
+    width: 500px; }
+  #wdic_container .wdic-list-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer; }
+  #wdic_container .wdic-popup ul li:hover {
+    font-size: 1.8em;
+    color: #009999;
+    list-style: none; }
+  #wdic_container .wdic-popup ul {
+    margin-top: 20px; }
+  #wdic_container .wdic-select-popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9001; }
+  #wdic_container .wdic-select-popup-overlay-target {
+    visibility: visible;
+    opacity: 1; }
+  #wdic_container .wdic-popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    max-width: 90%;
+    height: 625px;
+    position: relative;
+    transition: all .2s ease-in-out; }
+    #wdic_container .wdic-popup .wdic-ref-image {
+      text-align: center;
+      max-width: 100%; }
+      #wdic_container .wdic-popup .wdic-ref-image img {
+        max-width: 100%; }
+      #wdic_container .wdic-popup .wdic-ref-image .wdic-submit-help-image {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%); }
+  #wdic_container .wdic-popup li {
+    margin-top: 0;
+    color: #333;
+    font-family: 'segoe ui semibold', sans-serif;
+    font-size: 2em; }
+  #wdic_container .wdic-popup .wdic-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all 200ms;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff0020;
+    margin-bottom: 500px;
+    cursor: pointer; }
+  #wdic_container .wdic-popup .wdic-close:hover {
+    color: #b10016; }
+  #wdic_container .wdic-popup .content {
+    max-height: 30%;
+    overflow: auto; }
+  #wdic_container #wdic_popup1 {
+    background: rgba(0, 0, 0, 0.5); }
+  #wdic_container .wdic_ref_popup {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    border-radius: 3px;
+    text-align: center;
+    border: 2px #ffffff solid;
+    background-color: #663399;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 25px;
+    margin-top: 25px;
+    line-height: normal; }
+  #wdic_container #wdic_create_service:hover {
+    background: #30ba5d;
+    text-decoration: none; }
+  #wdic_container .wdic-email {
+    display: block;
+    text-align: center;
+    width: 100%; }
+  #wdic_container #submit_button_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #continue_button_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #cancel_button_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #email_text_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #selected_options_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #additional_notes_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #textarea_comments_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #success_text_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #email_error_text_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container .wdic-email-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .submit-button-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .email-text-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .continue-button-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .cancel-button-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .selected-options-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .additional-notes-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .textarea-comments-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .email-error-text-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px; }
+  #wdic_container .success-text-input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; }
+  #wdic_container .wdic-css-quick-edit {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+  #wdic_container label[name="wdic_css_edit_label"] {
+    position: relative;
+    text-align: center; }
+  #wdic_container #wdic_css_edit_area {
+    height: 150px;
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 25px;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5); }
+  #wdic_container #wdic_user_email {
+    display: block;
+    margin-bottom: 5px; }
+  #wdic_container #wdic_currency_div {
+    display: block;
+    text-align: center; }
+  #wdic_container #wdic_currency {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #wdic_currency_input {
+    display: inline-block;
+    width: 75px;
+    height: 25px; }
+  #wdic_container #wdic_currency_symbol_div {
+    display: block;
+    text-align: center; }
+  #wdic_container #wdic_symbol {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+  #wdic_container #wdic_symbol_select {
+    display: inline-block; }
+  #wdic_container #css_change_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+
+/*# sourceMappingURL=wdicsettings.css.map */

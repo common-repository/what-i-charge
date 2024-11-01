@@ -1,0 +1,363 @@
+/*submit service button*/
+.wdic-subServiceBtn #wdic_subService_btn {
+  width:275px;
+  height:75px;
+  text-align: center;
+  border:2px #ffffff solid !important;
+  background-color:$create-and-submit;
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26) !important;
+  -webkit-appearance: none;
+
+
+}
+#wdic_subService_btn:hover {
+  background-color: $create-and-submit-hover;
+}
+
+.wdic-white {
+  color:#ffffff;
+  text-decoration:none;
+  padding: 12px 16px 12px 16px;
+  text-align: center;
+
+}
+
+#wdic_subServiceBtn:hover {
+  background: $create-and-submit-hover;
+}
+
+/*create service button*/
+#wdic_create_service {
+  display: inline-block;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+  border-radius: 3px;
+  //  width:275px;
+//  height:75px;
+//  margin-top:100px;
+  text-align: center;
+  border:2px #ffffff solid;
+  background-color:$create-and-submit ;
+  position: relative;
+//  transform: translateX(-50%);
+  font-size: 2em;
+  color: #FFFFFF;
+  text-decoration: none;
+//  padding: 25px 25px;
+  padding: 35px 35px 35px 35px;
+}
+
+
+#wdic_create_service:hover  {
+  background: $create-and-submit-hover;
+  text-decoration: none;
+}
+
+#wdic_createServicePlus {
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border: 2px #ffffff solid;
+  background-color: $create-and-submit;
+  position: relative;
+  font-size: 2.5em;
+  color: #FFFFFF;
+  text-decoration: none;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+  border-radius: 3px;
+}
+
+#wdic_service_plus_position {
+  position: relative;
+  top: 20px;
+  left: 25px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  vertical-align: top;
+
+}
+
+
+#wdic_createServicePlus:hover  {
+  background: $create-and-submit-hover;
+  text-decoration: none;
+}
+
+/* plus button tooltip right */
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+  position: absolute;
+  display: none;
+  opacity: 0.85;
+}
+a[data-tooltip]::before {
+  /*
+   * using data-tooltip instead of title so we
+   * don't have the real tooltip overlapping
+   */
+  content: attr(data-tooltip);
+  font-family: 'segoe ui semibold', sans-serif;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+  line-height: 25px;
+  border-radius: 5px;
+  /* we don't want the text to wrap */
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+  display: block;
+}
+a[data-tooltip][data-placement="right"]::before {
+  left: 100%;
+  margin-left: 10px;
+}
+
+/*end plus button tooltip*/
+
+
+/*button for adding services*/
+.wdic-add-service-optbox {
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+.wdic-pick-color-label {
+  display: inline-block;
+}
+
+input[type="color"] {
+  width: 225px;
+  height: 55px;
+  display: inline-block;
+  border: 1px solid #474747;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  border-radius: 5px;
+
+}
+
+
+
+/*add services options button*/
+
+.wdic-serviceOpt {
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  text-align: center;
+  border: 2px #ffffff solid;
+  background-color: $create-and-submit ;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+  border-radius: 3px;
+
+}
+
+
+.wdic-serviceOpt:hover {
+  background: $create-and-submit-hover;
+}
+
+/*delete services options button*/
+
+.wdic-heading-delete {
+  margin-top: 25px;
+}
+
+.wdic-serviceOptDel {
+  display: inline-block;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border: 2px #ffffff solid;
+  background-color: $delete;
+  margin-left: 25px;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+  border-radius: 3px;
+}
+
+.wdic-serviceOptDel .wdic_white {
+  color:#ffffff;
+  text-decoration:none;
+  padding: 12px 16px 12px 16px;
+
+}
+
+.wdic-serviceOptDel:hover {
+  background: $delete-hover;
+}
+
+.wdic-x:hover {
+    background: $delete-hover;
+    color: white;
+}
+
+
+/*catagory buttons*/
+
+.wdic-catButtons button {
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.16), 0px 2px 5px 0px rgba(0,0,0,0.26);
+  border-radius: 3px;
+  line-height: 18px;
+  height: 75px;
+  width: 150px;
+  display: inline-block;
+  border: solid .1em white;
+  position: relative;
+  }
+
+@media screen and (max-width: 1200px) {
+  .wdic-catButtons button  {
+    border-radius: 1px;
+    line-height: 15px;
+    height: 75px;
+    width: 125px;
+  }
+
+}
+
+.wdic-catButtons {
+  display: inline-block;
+  position:absolute;
+  right:20px;
+  height:180px;
+  line-height: 180px;
+  top: 0px;
+}
+
+
+.wdic-catButtons a {
+  text-decoration: none;
+  color: white;
+  height: 75px;
+  display: inline-block;
+
+}
+
+
+.wdic-greenBtn {
+  background-color: $create-and-submit;
+  color: white;
+  cursor: pointer;
+
+}
+.wdic-greenBtn:hover {
+  background-color: $create-and-submit-hover;
+}
+
+
+.wdic-redBtn {
+  background-color: $delete;
+  color: white;
+  cursor: pointer;
+  margin-left: 40px;
+
+
+
+
+}
+.wdic-redBtn:hover {
+  background-color: $delete-hover;
+
+}
+
+.wdic-blueBtn {
+  background-color: #03A9F4;
+  color: white;
+  cursor: pointer;
+}
+
+.wdic-blueBtn:hover {
+  background-color: #057fb3;
+
+}
+
+.wdic-sub-cat-delete {
+  display: inline-block;
+  position: relative;
+  bottom: 75px;
+}
+
+
+
+//arrows
+.wdic-arrows {
+  height: 100px;
+  width: 50px;
+  position: relative;
+  display: inline-block;
+  left: 20px;
+}
+
+
+.wdic-up-arrow {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.wdic-down-arrow {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+}
+
+.wdic-up-arrow-service {
+  width: 40px;
+  //position: relative;
+  //right: 375px;
+  //top: 25px;
+  top: 50%;
+  display: inline-block;
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+
+}
+
+.wdic-down-arrow-service {
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+}
+
+.wdic-x {
+  position: absolute;
+  display: inline-block;
+  border: 2px #ffffff solid;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+  color: #CF000F;
+  right: -15px;
+  top: -15px;
+  background-color: rgba(0,0,0,.5);
+  font-size: 30px;
+}
+
+
+
+
+

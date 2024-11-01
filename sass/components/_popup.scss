@@ -1,0 +1,103 @@
+/*popup styling*/
+
+@media (max-width: 675px) {
+ div.wdic-popup {
+    width: 80%;
+
+    li {
+      width: 90%;
+    }
+  }
+
+}
+
+/*ppopup list style*/
+
+.wdic-list-item {
+  background: #fff;
+  box-shadow: 0 2px 3px #999;
+  font-family: sans-serif;
+  height: 30px;
+  list-style: none;
+  margin: 30px 0;
+  padding: 20px 10px;
+  text-align: center;
+  transform: translateZ(0);
+  transition: box-shadow 0.30s ease-in;
+  width: 500px;
+}
+
+.wdic-list-item:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+}
+
+.wdic-popup ul li:hover {
+  font-size: 1.8em;
+  color: #009999;
+  list-style: none;
+}
+
+.wdic-popup ul {
+  margin-top: 20px;
+}
+
+.wdic-select-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9001;
+}
+
+.wdic-select-popup-overlay-target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wdic-popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 530px;
+  height: 325px;
+  position: relative;
+  transition: all .2s ease-in-out;
+}
+
+.wdic-popup li {
+  margin-top: 0;
+  color: #333;
+  font-family: 'segoe ui semibold', sans-serif;
+  font-size: 2em;
+}
+
+.wdic-popup .wdic-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 500px;
+  cursor: pointer;
+
+}
+
+.wdic-popup .wdic-close:hover {
+  color: #06D85F;
+}
+
+.wdic-popup .content {
+  max-height: 30%;
+  overflow: auto;
+}

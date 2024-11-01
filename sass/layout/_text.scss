@@ -1,0 +1,62 @@
+/*catagory text */
+.wdic-service-name {
+  font-size: 3.5em;
+  line-height: 40px;
+  display: inline-block;
+  padding-left: 110px;
+  padding-right: 365px;
+  top: 90px;
+  position: relative;
+  transform: translateY(-50%);
+
+}
+
+//.wdic-service-price {
+//  font-size: 2.5em;
+//  line-height: 110px;
+//  position: relative;
+//  right: 50;
+//}
+
+.wdic-center-test {
+  @include wdic-price-centerer;
+}
+
+.wdic-catagory-list {
+  height: 180px;
+  margin: 0;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+
+
+
+
+
+#wdic-categories {
+  margin: 0;
+}
+
+.wdic_label-desc-space-correct {
+  display: inline-block;
+  height: 50px;
+  width: 75px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wdic-form-labels {
+  label {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+  input {
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+
+
+}

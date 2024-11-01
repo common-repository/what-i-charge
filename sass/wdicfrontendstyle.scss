@@ -1,0 +1,877 @@
+#wdic-frontend-container {
+  /* http://meyerweb.com/eric/tools/css/reset/
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+
+
+  html, body, div, button, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, textarea, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 30px;
+    word-spacing: 1.5px;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    text-transform: none;
+    border-bottom-width: 0px;
+    border-bottom-height: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-color: white;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-left-color: white;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: white;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: white;
+    border-top-style: none;
+    border-top-width: 0px;
+    max-width: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    opacity: 1;
+    list-style: none;
+
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+
+
+  * {
+    text-shadow: none;
+  }
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  .wdic-service-name {
+    background-color: #673AB7;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    height: 150px;
+    width: 150px;
+    padding: 10px 5px;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.20), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    position: relative;
+    font-size: 1.4em;
+
+
+    //display:table-cell;
+    display: inline-block;
+    vertical-align:middle;
+
+
+
+    .wdic-service-name-inner-text {
+      text-align: center;
+      margin-top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1em;
+    }
+
+  }
+
+  .wdic-service-name.wdic-shrink{
+    width:100px;
+    height: 100px;
+    font-size: 1em;
+  }
+
+
+  .wdic-service-content-container {
+    position: relative;
+    display: none;
+
+  }
+
+  .wdic-service-content-container:first-child {
+    display: block;
+  }
+
+  .wdic-bottomDiv {
+    display: block;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    position: relative;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+
+
+  }
+
+  .wdic-bottomDiv.wdic-shrink{
+    padding: 0 10px 10px 10px;
+  }
+
+  #wdic_top_tabs {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  #wdic_top_tabs.wdic-shrink{
+    text-align: center;
+  }
+
+  #wdic_title {
+    text-align: center;
+  }
+
+  .wdic-submenu-headings {
+    width: 500px;
+  }
+  #wdic_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  /*this is the text in the large bottom div*/
+  .wdic-serviceText {
+    color: #ffffff;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  .wdic-serviceText.wdic-shrink{
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  /*heading in bottom div*/
+  .wdic-innerHeading {
+    //padding: 50px 0 0 75px;
+    padding: 20px;
+    font-size: 4.5em;
+    margin: 0;
+    height: auto;
+    line-height: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .wdic-innerHeading.wdic-shrink{
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .wdic-service-price {
+    text-align: center;
+  }
+  .wdic-price-amount, .wdic-price-symbol {
+    font-size: 3em;
+    position: relative;
+  }
+
+
+
+  /*begin contact css*/
+
+  .wdic-emailContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #FAFAFA;
+  }
+  .wdic-emailHeading {
+    -webkit-border-radius: 6px 6px 0px 0px;
+    -moz-border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: #009688;
+    color: #FAFAFA;
+  }
+  h2 {
+    text-align: center;
+    padding: 18px 0 18px 0;
+    font-size: 1.4em;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  textarea {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  input:first-of-type {
+    margin-top: 35px;
+  }
+  input, textarea {
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    border: 1px solid #cecece;
+    background: #B0B0B0;
+    color: #FAFAFA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 600px;
+  }
+  ::-webkit-input-placeholder {
+    color: #FAFAFA;
+  }
+  :-moz-placeholder {
+    color: #FAFAFA;
+  }
+  ::-moz-placeholder {
+    color: #FAFAFA;
+  }
+  :-ms-input-placeholder {
+    color: #FAFAFA;
+  }
+
+  label.error {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 1em;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #d89c9c;
+    width: 80%;
+    margin: auto;
+    color: #FAFAFA;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+
+  .message {
+    font-size: 1.1em;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #009688;
+    width: 80%;
+    margin: auto;
+    color: #FAFAFA;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+
+  /*end contact css*/
+
+
+
+  /*toggle*/
+  .wdic-onoffswitch {
+    position: relative;
+    width: 55px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+
+  }
+  input[type=checkbox].wdic-onoffswitch-checkbox {
+    display: none;
+  }
+  .wdic-onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 20px;
+    padding: 0;
+    line-height: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  }
+  span.wdic-onoffswitch-span {
+    display: inline-block;
+    width: 30px;
+    margin: -5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 31px;
+    border-radius: 30px;
+    height: 30px;
+  }
+
+  .wdic-onoffswitch-checkbox:checked + .wdic-onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+
+  }
+  .wdic-onoffswitch-checkbox:checked + .wdic-onoffswitch-span {
+    right: 0px;
+  }
+  .wdic-toggle-container {
+    min-height: 100px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.20), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+
+  }
+
+  .wdic-toggle-container.wdic-shrink{
+    padding:10px;
+  }
+
+  .wdic-toggle-option-container{
+    position: relative;
+    display: block;
+
+    .wdic-frontend-toggle-option {
+      //float: right;
+      display: inline-block;
+      position: absolute;
+      right:0px;
+      top: 50%;
+      transform:translateY(-50%);
+
+      //right: 10px;
+
+    }
+
+    .wdic-toggle-option {
+      font-size: 2em;
+      position: relative;
+
+      //top: 25px;
+      line-height: 1.2em;
+      display: inline-block;
+      text-align: center;
+
+    }
+
+    .wdic-toggle-option.wdic-shrink{
+      font-size: 1em;
+    }
+  }
+
+
+
+  .wdic-toggle-heading {
+    font-size: 2.5em;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 1.2em;
+
+  }
+
+  .wdic-toggle-heading.wdic-shrink{
+    font-size: 1.4em;
+  }
+
+
+  /*end toggle*/
+
+  //  dropdown option 1
+
+  .wdic-frontend-dropdown-container {
+    min-height: 200px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+
+    .wdic-dropdown-heading {
+      position: relative;
+      text-align: center;
+      font-size: 2em;
+      padding-bottom: 25px;
+      line-height: 1.2em;
+
+    }
+    .wdic-dropdown-heading.wdic-shrink {
+      font-size: 1.4em;
+    }
+
+  }
+
+  .wdic-frontend-dropdown-container h2 {
+    display: inline-block;
+    max-width: 90%;
+    padding: 10px 0px 10px 10px;
+    margin-right: 50px;
+    font-size: 1.5em;
+    /*padding-left: 25px;*/
+    /*padding-top: 15px;*/
+    border-radius: 15px;
+
+
+  }
+
+  .wdic-frontend-dropdown-container ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+
+
+  }
+
+  .wdic-fdc-header {
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+
+  }
+
+
+  .wdic-frontend-dropdown-container.wdic-shrink {
+    padding: 10px;
+
+    .wdic-fdc-header{
+      width: 100%;
+    }
+
+    ul{
+      width: 100%;
+    }
+  }
+
+  .wdic-fdc-header span {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    //margin: 0px 10px 0px 10px;
+    background-image: url(../views/images/wdic-dropdown-arrow-black.png);
+    background-size: 30px 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: center;
+  }
+
+  .wdic-fdc-header span.wdic-unactive {
+    animation-name: wdic-rotate-reverse;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    //transform-origin: 50% 50%;
+  }
+
+  .wdic-fdc-header span.wdic-active {
+    animation-name: wdic-rotate;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    //transform-origin: 50% 50%;
+  }
+
+  .wdic-frontend-dropdown-container ul {
+    width: 80%;
+    .wdic-active {
+      display: inline-block;
+    }
+  }
+
+  .wdic-frontend-dropdown-container li {
+    padding: 15px 0 15px 25px;
+    text-align: left;
+
+  }
+  @-webkit-keyframes wdic-rotate {
+    to {
+      transform: rotate(90deg) translateX(-50%)
+    }
+  }
+  @-webkit-keyframes wdic-rotate-reverse {
+    from {
+      transform: rotate(90deg) translateX(-50%);
+    }
+    to {
+      transform: rotate(0deg) translateY(-50%);
+    }
+  }
+
+  //beave boxes
+
+
+  .wdic-checkbox-container {
+    min-height: 200px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.20), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+
+    .wdic-checkbox li {
+      list-style-type: none;
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 35px;
+      margin-right: 25px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+
+      .wdic-check-option-name {
+        font-size: 2em;
+      }
+
+      .wdic-check-option-name.wdic-shrink {
+        font-size: 1em;
+      }
+
+    }
+    .wdic-checkbox .wdic-checkbox-span {
+      display: inline-block;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      min-height: 20px;
+      border: solid 2px blue;
+
+    }
+
+    .wdic-checkbox .wdic-checkbox-span.wdic-checkbox-span-active {
+      background-image: url("../views/images/blackCheck.png");
+      background-size: 100% 100%;
+      min-height: 15px;
+      background-repeat: no-repeat;
+    }
+    .wdic-checkbox-heading {
+      position: relative;
+      flex: auto;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      line-height: 1.2em;
+
+    }
+    .wdic-checkbox-heading.wdic-shrink {
+      font-size: 1.4em;
+    }
+
+  }
+  .wdic-checkbox-container.wdic-shrink {
+    padding: 10px;
+
+    li {
+      padding: 0;
+      display: table;
+    }
+    .wdic-checkbox-span {
+      min-height: 40px;
+      min-width: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+    .wdic-checkbox-span-active.wdic-checkbox-span  {
+      min-height: 40px;
+      min-width: 40px;
+    }
+    .wdic-check-option-name {
+      padding-left: 50px;
+      display: table-cell;
+      min-height: 40px;
+      vertical-align: middle;
+    }
+  }
+
+  .wdic-continue-to-submission {
+    display: block;
+    position: relative;
+    color: #ffffff;
+    background: #87D37C;
+    height: 100px;
+    width: 350px;
+    font-size: 2em;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    padding: 10px;
+  }
+
+  .wdic-continue-to-submission.wdic-shrink {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+
+    //checkout and second screen
+
+  .wdic-service-checkout {
+    display: none;
+    padding-top: 45px;
+
+    .wdic-checkout-email {
+      display: block;
+      position: relative;
+      color: #ffffff;
+      font-size: 3em;
+      width: 90%;
+      margin: auto;
+      padding-bottom: 25px;
+      text-align: center;
+
+    }
+    .wdic-checkout-email.wdic-shrink {
+      font-size: 1.4em;
+      width: 100%;
+      text-align: center;
+    }
+
+    .wdic-checkout-email-input {
+      display: block;
+      background-color: #ffffff;
+      color: #000000;
+      position: relative;
+      display: block;
+      border: 1px solid #474747;
+      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+      border-radius: 5px;
+      font-size: 20px;
+      width: 90%;
+      height: 40px;
+      margin: auto;
+      margin-bottom: 25px;
+
+    }
+    .wdic-checkout-email-input.wdic-shrink {
+      padding: 10px;
+      width: 80%;
+    }
+
+
+    .wdic-checkout-options {
+      display: block;
+      position: relative;
+      padding-top: 25px;
+      font-size: 3em;
+      position: relative;
+      color: #ffffff;
+      padding-bottom: 25px;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+
+
+    }
+    .wdic-checkout-options.wdic-shrink {
+      font-size: 1.4em;
+      width: 100%;
+      text-align: center;
+    }
+
+    .wdic-notes {
+      display: block;
+      position: relative;
+      padding-top: 25px;
+      color: #ffffff;
+      font-size: 3em;
+      padding-bottom: 25px;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+
+
+
+    }
+
+    .wdic-notes.wdic-shrink {
+      font-size: 1.4em;
+      width: 100%;
+      text-align: center;
+    }
+
+    .wdic-textarea {
+      display: block;
+      position: relative;
+      color: #000000;
+      font-size: 2em;
+      display: block;
+      height: 275px;
+      width: 90%;
+      background: #FFFFFF;
+      border: 1px solid #474747;
+      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+      border-radius: 5px;
+      margin: auto;
+      margin-bottom: 25px;
+      line-height: 40px;
+    }
+    .wdic-textarea.wdic-shrink {
+      padding: 10px;
+      width: 80%;
+    }
+
+    .wdic-textarea-options-list {
+      color: #DADFE1;
+      background-color: #BFBFBF;
+      border: 1px solid #474747;
+      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+      line-height: 40px;
+
+    }
+
+    .wdic-checkout-name {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 3em;
+      line-height: 55px;
+      margin-bottom: 10px;
+
+    }
+    .wdic-checkout-name.wdic-shrink {
+      font-size: 1.4em;
+      width: 100%;
+      text-align: center;
+    }
+
+    .wdic-checkout-price {
+      display: block;
+      text-align: center;
+      .wdic-service-price {
+        display: inline-block;
+      }
+      .wdic-checkout-price.wdic-shrink {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+    .wdic-checkout-buttons {
+      padding: 30px 0 50px 0;
+      text-align: center;
+
+    }
+    .wdic-checkout-submit {
+      display: inline-block;
+      color: #ffffff;
+      background: #87D37C;
+      height: 75px;
+      width: 275px;
+      font-size: 2em;
+      color: #FFFFFF;
+      box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+      //margin-right: 25px;
+      max-width: 90%;
+    }
+    .wdic-checkout-submit.wdic-shrink{
+      margin: auto;
+      display: block;
+      margin-top: 15px;
+    }
+
+    .wdic-checkout-cancel {
+      display: inline-block;
+      color: #ffffff;
+      height: 75px;
+      width: 275px;
+      background: #F22613;
+      font-size: 2em;
+      color: #FFFFFF;
+      box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+      max-width: 90%;
+      margin-bottom: 10px;
+
+    }
+    .wdic-checkout-cancel.wdic-shrink {
+      margin: auto;
+      display: block;
+    }
+
+
+
+    ::-webkit-input-placeholder {
+      color: grey;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+      color: grey;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+      color: grey;
+    }
+
+    :-ms-input-placeholder {
+      color: grey;
+    }
+
+
+  }
+}
+
+
+
+
+

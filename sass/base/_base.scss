@@ -1,0 +1,775 @@
+#wdic_container {
+
+  background-color: #265980;
+  color: #ffffff;
+  width: 99%;
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 100px;
+
+  input[name="wdic-option-price"] {
+    text-align: right;
+  }
+
+  textarea[name="wdic_service_description"] {
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+  }
+
+
+  .wdic-color-choices {
+    background: #7f8c8d;
+    box-shadow: 0px 8px 17px 0px rgba(0,0,0,0.20), 0px 6px 20px 0px rgba(0,0,0,0.19);
+    margin-top: 75px;
+    position: relative;
+
+  }
+
+input[name="wdic_name"][type="text"] {
+  width: 400px;
+}
+   input  {
+     font-size: 1.5em;
+     display: inline-block;
+     border: 1px solid #474747;
+     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+     width: 400px;
+     height: 50px;
+     text-align: left;
+   }
+  button  {
+    display: inline-block;
+    font-size: 1.5em;
+
+
+  }
+   label {
+     margin: 32px;
+     font-size: 1.5em;
+     cursor: auto;
+     display: inline-block;
+     text-transform: capitalize;
+   }
+
+   input[type="text"] {
+     width: 400px;
+     height: 50px;
+     display: inline-block;
+   }
+   input[type="checkbox"], input[type="radio"] {
+     display: none;
+   }
+
+   input[type="checkbox"] + label, input[type="radio"] + label {
+     display: inline-block;
+     width: 36px;
+     height: 36px;
+     background-color: #009999;
+     border: 2px #ffffff solid;
+     cursor: pointer;
+   }
+
+   input[type="radio"] + label, input[type="radio"] + label span {
+     border-radius: 25px;
+   }
+
+   input[type="checkbox"] + label span {
+     position: absolute;
+     display: block;
+     width: 2px;
+     height: 32px;
+     margin-left: 17px;
+     margin-top: 2px;
+
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+   }
+
+   input[type="checkbox"] + label span:nth-child(2) {
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     transform: rotate(45deg);
+   }
+
+   input[type="radio"] + label span {
+     position: absolute;
+     display: block;
+     width: 20px;
+     height: 20px;
+     margin: 8px;
+
+   }
+
+   input[type="checkbox"]:checked + label span, input[type="radio"]:checked + label span {
+     background-color: #ffffff;
+   }
+
+   label p {
+     margin-left: 50px;
+     width: 250px;
+     display: inline-block;
+   }
+
+   //general styles
+
+  .wdic-mobile-only {
+    display: none;
+  }
+   /* ==========================================================================
+      Media Queries
+      ========================================================================== */
+
+
+  @media (max-width:3840px) {
+
+
+
+
+    #what-i-charge-admin{
+
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0 10px 0 10px;
+    }
+    .wdic-service-name-container {
+      padding-top: 5px;
+    }
+
+    input[name="wdic-submenu-option-name"] {
+      margin-bottom: 25px;
+    }
+
+    input[name="wdic-option-price"] {
+      width: 80%;
+    }
+
+    input[name="wdic_base_price"] {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    input[name="wdic_name"] {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    label {
+      position: relative;
+      margin: 50px 0 10px 0;
+      font-size: 2.5em;
+      cursor: auto;
+      display: inline-block;
+      text-transform: capitalize;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+
+    #wdic-edit-form{
+      width: 100%;
+      margin: 0;
+    }
+    .wdic-form-labels {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    input {
+      display: block;
+      width: 80%;
+    }
+    label {
+      display: block;
+      width: 80%;
+    }
+    label.wdic-pick-color-label {
+      display: block;
+    }
+    input[type="color"].color-picker {
+      display: block;
+      position: relative;
+    }
+    .wdic-service-name-container input[name="wdic_name"][type="text"] {
+      display: block;
+      width: 80%;
+    }
+
+    font-size: .8em;
+
+    .wdic-submenu-container {
+      padding: 0px 10px 25px 10px;
+    }
+
+
+
+    .wdic-arrows {
+      left: 0px;
+      text-align: center;
+      line-height: 50px;
+      height: 100px;
+    }
+
+    .wdic_optHead {
+      font-size: 5em;
+      height: 100px;
+      text-align: center;
+      margin: 0;
+      line-height: 100px;
+      padding-left: 25px;
+    }
+
+    .wdic-add-checkbox-option {
+      display: none;
+    }
+
+    .wdic-add-drop-option {
+      display: none;
+    }
+
+    .wdic-mobile-only {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .wdic-option-container {
+      padding: 0px 10px 25px 10px;
+    }
+
+    .wdic-option-container .wdic-option-label, .wdic-mobile-label  {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 25px 0;
+      margin: 0;
+      text-align: center;
+
+    }
+    .wdic-price-pad {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+
+    }
+    input[type="text"] {
+      width: 80%;
+    }
+
+    input[type="color"].color-picker {
+      width: 80%;
+    }
+
+
+
+    .wdic-service-description {
+      display: block;
+      position: relative;
+      width: 100%;
+      margin: 0;
+
+    }
+    input[name="wdic-subservice-checkbox-name"] {
+      margin-bottom: 25px;
+    }
+
+
+    .wdic-indent {
+      margin: 0;
+      padding: 0 0 10px 0;
+    }
+
+    .wdic-service-description-container {
+      display: block;
+      width: 100%;
+    }
+
+    textarea[name="wdic_service_description"] {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      padding: 0;
+    }
+
+    .wdic-checkbox-option {
+      position: relative;
+      background-color: #6c7a89;
+      margin: 15px 10px;
+      padding-bottom: 25px;
+      margin-top: 75px;
+
+    }
+    .wdic-drop-option {
+      position: relative;
+      background-color: #6c7a89;
+      margin: 15px 10px;
+      padding-bottom: 25px;
+      margin-top: 75px;
+
+
+
+    }
+    .wdic-delete-checkbox-option, .wdic-delete-drop-option {
+      position: absolute;
+      border: 2px #ffffff solid;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 40px;
+      color: #CF000F;
+      right: -15px;
+      top: -15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    .wdic-col2 {
+      padding-bottom: 25px;
+    }
+    div.wdic-col1, div.wdic-col2{
+      display: block;
+      width: 100%;
+      border: none;
+      div > input[type="text"] {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+      }
+      input[name="wdic-option-price"] {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+
+      }
+      input[name="wdic-option-price"].wdic-toggle-price {
+        width: 80%;
+
+      }
+      select {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+      }
+
+
+
+
+    }
+
+
+    .color-picker {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+    .wdic-submenu-container input.color-picker {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+
+    .wdic-serviceOpt {
+      width: 75px;
+      height: 75px;
+      font-size: 2em;
+    }
+  }
+
+
+
+
+
+  @media (max-width:800px) {
+    .wdic-service-list-heading {
+      margin-left: 10px;
+    }
+    #wdic_service_plus_position{
+      position: relative;
+      top: 50%;
+      vertical-align: baseline;
+    }
+
+    .wdic-service-arrows{
+      position: relative;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .wdic-service-name {
+      display: block;
+      padding: 0;
+      transform: none;
+      top:0px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .wdic-catagory-list {
+      height: auto;
+      padding: 10px;
+
+    }
+
+    .wdic-catButtons {
+      position: relative;
+      display: block;
+      right: 0;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      line-height: normal;
+      a {
+        width: 49%;
+        margin: 0;
+        button {
+          width: 100%;
+        }
+      }
+      .wdic-redBtn {
+        width: 49%;
+        margin: 0;
+      }
+    }
+
+
+    #what-i-charge-admin{
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0 10px 0 10px;
+    }
+    .wdic-service-name-container {
+      padding-top: 5px;
+    }
+
+    input[name="wdic-submenu-option-name"] {
+      margin-bottom: 25px;
+    }
+
+    input[name="wdic-option-price"] {
+      width: 80%;
+    }
+
+    input[name="wdic_base_price"] {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    input[name="wdic_name"] {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    label {
+      position: relative;
+      margin: 50px 0 10px 0;
+      font-size: 2em;
+      cursor: auto;
+      display: inline-block;
+      text-transform: capitalize;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+
+    #wdic-edit-form{
+      width: 100%;
+      margin: 0;
+    }
+    .wdic-form-labels {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    input {
+      display: block;
+      width: 80%;
+    }
+    label {
+      display: block;
+      width: 80%;
+    }
+    label.wdic-pick-color-label {
+      display: block;
+    }
+    input[type="color"].color-picker {
+      display: block;
+      position: relative;
+    }
+    .wdic-service-name-container input[name="wdic_name"][type="text"] {
+      display: block;
+      width: 80%;
+    }
+
+    font-size: .8em;
+
+    .wdic-submenu-container {
+      padding: 0px 10px 25px 10px;
+    }
+
+
+
+    .wdic-arrows {
+      left: 0px;
+      text-align: center;
+      line-height: 50px;
+      height: 100px;
+    }
+
+    .wdic_optHead {
+      font-size: 3em;
+      height: 100px;
+      text-align: center;
+      margin: 0;
+      line-height: 100px;
+      padding-left: 25px;
+    }
+
+    .wdic-add-checkbox-option {
+      display: none;
+    }
+
+    .wdic-add-drop-option {
+      display: none;
+    }
+
+    .wdic-mobile-only {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .wdic-option-container {
+      padding: 0px 10px 25px 10px;
+    }
+
+    .wdic-option-container .wdic-option-label, .wdic-mobile-label  {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 25px 0;
+      margin: 0;
+      text-align: center;
+
+    }
+    .wdic-price-pad {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+
+    }
+    input[type="text"] {
+      width: 80%;
+    }
+
+    input[type="color"].color-picker {
+      width: 80%;
+    }
+
+
+
+    .wdic-service-description {
+      display: block;
+      position: relative;
+      width: 100%;
+      margin: 0;
+
+    }
+    input[name="wdic-subservice-checkbox-name"] {
+      margin-bottom: 25px;
+    }
+
+
+    .wdic-indent {
+      margin: 0;
+      padding: 0 0 10px 0;
+    }
+
+    .wdic-service-description-container {
+      display: block;
+      width: 100%;
+    }
+
+    textarea[name="wdic_service_description"] {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      padding: 0;
+    }
+
+    .wdic-checkbox-option {
+      position: relative;
+      background-color: #6c7a89;
+      margin: 15px 10px;
+      padding-bottom: 25px;
+      margin-top: 75px;
+
+    }
+    .wdic-drop-option {
+      position: relative;
+      background-color: #6c7a89;
+      margin: 15px 10px;
+      padding-bottom: 25px;
+      margin-top: 75px;
+
+
+
+    }
+    .wdic-delete-checkbox-option, .wdic-delete-drop-option {
+      position: absolute;
+      border: 2px #ffffff solid;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 40px;
+      color: #CF000F;
+      right: -15px;
+      top: -15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    .wdic-col2 {
+      padding-bottom: 25px;
+    }
+    div.wdic-col1, div.wdic-col2{
+      display: block;
+      width: 100%;
+      border: none;
+      div > input[type="text"] {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+      }
+      input[name="wdic-option-price"] {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+
+      }
+      input[name="wdic-option-price"].wdic-toggle-price {
+        width: 80%;
+
+      }
+      select {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+      }
+
+
+
+
+    }
+
+
+    .color-picker {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+    .wdic-submenu-container input.color-picker {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  //input[name="wdic-subservice-toggle-heading"] {
+     //  width: 400px;
+     //  display: inline-block;
+     //}
+     //input[name="wdic-subservice-checkbox-name"] {
+     //  width: 400px;
+     //  display: inline-block;
+     //}
+     //input[name="wdic-subservice-drop-name"] {
+     //  width: 400px;
+     //  display: inline-block;
+     //}
+     //input[name="wdic-submenu-option-name"] {
+     //  width: 400px;
+     //  display: inline-block;
+     //}
+
+     .wdic-toggle-option-text {
+       width: 400px;
+     }
+     .wdic-toggle-price {
+       width: 400px;
+       text-align: left;
+     }
+
+     .wdic-option-label {
+       margin: 0 30px 0 0;
+       padding: 0;
+       min-width: 110px;
+       text-align: right;
+
+     }
+
+     input[type="color"] {
+       width: 250px;
+     }
+     select {
+       width: 400px;
+       height: 50px;
+       font-size: 2em;
+       border: 1px solid #474747;
+       box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+
+     }
+
+
+
+
+}

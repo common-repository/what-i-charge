@@ -1,0 +1,116 @@
+@import "base/variables";
+@import "base/mixins";
+
+.wdic-link {
+  margin-right: 10px;
+  color: #F2784B;
+  font-size: 1.2em;
+}
+
+#wdic_container {
+
+  background-color: #265980;
+  color: #ffffff;
+  width: 99%;
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 100px;
+
+  input {
+    display: inline-block;
+    border: 1px solid #474747;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.50);
+    width: 300px;
+    height: 55px;
+
+  }
+  label {
+    margin: 32px;
+    font-size: 1.5em;
+    cursor: auto;
+    display: inline-block;
+
+  }
+
+  .wdic-license-btn {
+    width: 275px;
+    height: 75px;
+    text-align: center;
+    border: 2px #ffffff solid;
+    background-color: $create-and-submit;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    border-radius: 3px;
+    font-size: 2em;
+    line-height: 50%;
+    padding: 15px 15px 15px 15px;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  .wdic-wdic-license-btn:hover {
+    background-color: $create-and-submit-hover;
+  }
+
+  .wdic-api-card {
+    background: #7f8c8d;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.20), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5%;
+  }
+
+  .wdic-serviceHead-center {
+    display: block;
+    font-size: 4em;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .wdic-api-div {
+    display: block;
+    text-align: center;
+
+  }
+
+  #api_key_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  #wdic_api_email_label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  #wdic_api_email {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  #wdic_api_input {
+    display: inline-block;
+
+  }
+
+  @media screen and (max-width: 620px) {
+      line-height: normal;
+  }
+
+  .wdic-success {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 25px;
+  }
+
+}
